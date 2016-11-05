@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block title %} Artykuły {% endblock %}
+
+{% block content %}
+
+<tr align="center">
+{% for article in article_list %}
+
+  <td><h3> {{ article.title }}</h3></td>
+
+{% endfor %}
+</tr>
+
+{% endblock %}

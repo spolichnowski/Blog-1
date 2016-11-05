@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block title %}Kontakt{% endblock %}
+{% block content %}
+<div id="email">
+<form action="." method="post">
+  {% csrf_token %}
+  <table>
+  {{ form.as_p }}
+  <tr colspan="2">
+  <button type="submit">Wyślij</button>
+  </tr>
+</table>
+</form>
+</div>
+  {% endblock %}
